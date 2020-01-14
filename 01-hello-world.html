@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module">
-      import {
-        createApp,
-        openBlock,
-        createBlock,
-      } from 'https://cdn.jsdelivr.net/npm/vue@3.0.0-alpha.2/dist/vue.esm.js'
+<div id="app"></div>
+<script type="module">
+  import {
+    createApp,
+    openBlock,
+    createBlock,
+  } from 'https://cdn.jsdelivr.net/npm/vue@3.0.0-alpha.2/dist/vue.esm.js'
 
-      function render() {
-        return openBlock(), createBlock('h1', null, 'hello world')
-      }
-      createApp().mount({ render }, '#app')
-    </script>
-  </body>
-</html>
+  function render() {
+    return openBlock(), createBlock('h1', null, 'hello world')
+  }
+  createApp().mount({ render }, '#app')
+</script>
