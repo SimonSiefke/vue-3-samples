@@ -1,4 +1,4 @@
-# 04-fragments
+# 04-fragment
 
 This example shows how a component with fragments works.
 
