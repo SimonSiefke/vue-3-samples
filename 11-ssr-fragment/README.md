@@ -1,6 +1,6 @@
 # 11-ssr-fragment
 
-This example shows how a component with ssr and fragments works. Vue uses a html wraps fragments with a html comment that looks like an array `<!--[-->` `<!--]-->` to identify fragments during hydration.
+This example shows how a component with ssr and fragments works. Vue wraps fragments with a html comment that looks like an array `<!--[-->` `<!--]-->` to identify fragments during hydration.
 
 ```html
 <meta charset="utf-8" />
