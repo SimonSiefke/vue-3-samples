@@ -12,9 +12,9 @@ This example shows how a component with `ref` works.
     createBlock,
     onMounted,
     ref,
-  } from 'https://unpkg.com/vue@3.0.0-alpha.2/dist/vue.esm.js'
+  } from 'https://unpkg.com/vue@3.0.0-beta.12/dist/vue.esm-browser.js'
 
-  const component = {
+  const App = {
     setup() {
       const count = ref(0)
       onMounted(() => {
@@ -31,6 +31,6 @@ This example shows how a component with `ref` works.
       return openBlock(), createBlock('h1', null, _ctx.count, 1 /* TEXT */)
     },
   }
-  createApp().mount(component, '#app')
+  createApp(App).mount('#app')
 </script>
 ```

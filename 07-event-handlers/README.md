@@ -1,5 +1,7 @@
 # 07-event-handlers
 
+TODO current broken
+
 This example shows how a component with event handlers works.
 
 ```html
@@ -30,7 +32,7 @@ This example shows how a component with event handlers works.
         openBlock(),
         createBlock(
           'button',
-          { onClick: _cache[1] || (_cache[1] = $event => _ctx.count++) },
+          { onClick: _cache[1] || (_cache[1] = ($event) => _ctx.count++) },
           _ctx.count,
           1 /* TEXT */,
         )

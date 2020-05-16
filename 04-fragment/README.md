@@ -12,11 +12,11 @@ This example shows how a component with fragments works.
     createBlock,
     createVNode,
     Fragment,
-  } from 'https://unpkg.com/vue@3.0.0-alpha.2/dist/vue.esm.js'
+  } from 'https://unpkg.com/vue@3.0.0-beta.12/dist/vue.esm-browser.js'
 
   const _hoisted_1 = createVNode('h1', null, 'Hello Vue 3!')
-  const _hoisted_2 = createVNode('h1', null, 'This is a Fragment')
-  const component = {
+  const _hoisted_2 = createVNode('h1', null, 'This is a Fragment.')
+  const App = {
     render() {
       const _ctx = this
       return (
@@ -30,6 +30,6 @@ This example shows how a component with fragments works.
       )
     },
   }
-  createApp().mount(component, '#app')
+  createApp(App).mount('#app')
 </script>
 ```

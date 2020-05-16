@@ -10,12 +10,12 @@ This example shows how a component with `setup` works.
     createApp,
     openBlock,
     createBlock,
-  } from 'https://unpkg.com/vue@3.0.0-alpha.2/dist/vue.esm.js'
+  } from 'https://unpkg.com/vue@3.0.0-beta.12/dist/vue.esm-browser.js'
 
-  const component = {
+  const App = {
     setup() {
       return {
-        message: 'hello world',
+        message: 'hello from setup',
       }
     },
     render() {
@@ -23,6 +23,6 @@ This example shows how a component with `setup` works.
       return openBlock(), createBlock('h1', null, _ctx.message, 1 /* TEXT */)
     },
   }
-  createApp().mount(component, '#app')
+  createApp(App).mount('#app')
 </script>
 ```

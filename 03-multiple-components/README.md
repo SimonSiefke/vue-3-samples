@@ -11,18 +11,18 @@ This example shows how a components work.
     openBlock,
     createBlock,
     createVNode,
-  } from 'https://unpkg.com/vue@3.0.0-alpha.2/dist/vue.esm.js'
+  } from 'https://unpkg.com/vue@3.0.0-beta.12/dist/vue.esm-browser.js'
 
   const otherComponent = {
     render() {
-      return openBlock(), createBlock('h1', null, 'hello world')
+      return openBlock(), createBlock('h1', null, 'Other Component')
     },
   }
-  const component = {
+  const App = {
     render() {
       return openBlock(), createVNode(otherComponent)
     },
   }
-  createApp().mount(component, '#app')
+  createApp(App).mount('#app')
 </script>
 ```
