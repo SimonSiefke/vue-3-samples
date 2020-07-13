@@ -15,7 +15,7 @@
     "vue": "^3.0.0-alpha.2"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "11.0.1",
+    "@rollup/plugin-commonjs": "13.0.2",
     "@rollup/plugin-node-resolve": "7.0.0",
     "@rollup/plugin-replace": "2.3.0",
     "http-server": "0.12.1",
